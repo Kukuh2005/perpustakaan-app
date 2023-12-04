@@ -142,12 +142,6 @@ class BukuController extends Controller
         return redirect('buku')->with('sukses', 'Data berhasil di update');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\buku  $buku
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $buku = Buku::find($id);
